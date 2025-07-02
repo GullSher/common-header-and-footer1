@@ -1,19 +1,24 @@
 // Load and insert the footer
 
+
 fetch("./footer.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("footer").innerHTML = data;
 
-    // Optional: load footer.css
+       // Optional: load footer.css
+    // ✅ Dynamically add footer.css
     if (!document.querySelector('link[href$="css/footer.css"]')) {
       const link = document.createElement("link");
       link.rel = "stylesheet";
-      link.href = "./css/footer.css"; // Use this if footer has its own styles
+      link.href = "./css/footer.css";
       document.head.appendChild(link);
     }
   })
   .catch((error) => console.error("Error loading footer:", error));
+
+
+
 
 
 
