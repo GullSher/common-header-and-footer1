@@ -19,11 +19,6 @@ fetch("./footer.html")
 
 
 
-
-
-
-
-
 // to load footer.html at github
 
 // fetch("./footer.html")
